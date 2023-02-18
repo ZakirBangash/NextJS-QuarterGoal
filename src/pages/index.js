@@ -4,7 +4,6 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ allPostsData }) {
-  console.log("allPostsData:", allPostsData);
   return (
     <Layout home>
       <Head>
