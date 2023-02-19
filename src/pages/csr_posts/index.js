@@ -1,6 +1,7 @@
+import { CSR_Post_STRINGS } from "@/constants/strings";
 import Head from "next/head";
 import CSR_Post from "../../components/CSR_Post";
-import { usePaginatePosts } from "../../components/useRequest";
+import { usePaginatePosts } from "../../hooks/useRequests";
 
 export default function Home() {
   const { posts, error, isLoadingMore, size, setSize, isReachingEnd } =
@@ -29,7 +30,7 @@ export default function Home() {
             margin: "1.25rem",
           }}
         >
-          My Posts
+          {CSR_Post_STRINGS.myPost}
         </h1>
 
         {posts.map((post) => (
